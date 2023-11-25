@@ -14,7 +14,7 @@ result_class_dict = {"bad": "Не распознано", "beton": "Бетон", 
 
 def recognition(file_path):
     frame_rate = 1
-    model = tf.keras.models.load_model('model1.h5')
+    model = tf.keras.models.load_model('best_model.h5')
     # preds = loaded_model.predict(x)
 
     cap = cv2.VideoCapture(file_path)
